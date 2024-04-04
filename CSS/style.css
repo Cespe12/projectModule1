@@ -5,11 +5,12 @@
     
 }
 body{
+    
     background-color: antiquewhite;
     margin-top: 20px;
 }
 header, footer{
-    width: 1300px;
+    max-width: 1300px;
     height: 58px;
     background-color: #255538;
     border-radius: 6px;
@@ -30,9 +31,11 @@ header, footer{
 }
 .main-img{
     margin: 0 auto;
-    width: 1230px;
-    height: 350px;
+    max-width: 1230px; /* Permite que el contenedor se ajuste al ancho disponible */
+    height: 350px; /* Puedes ajustar esto según necesites, o hacerlo responsive también */
     background-image: url(/images/home-img.jpg);
+    background-size: cover; /* Asegura que la imagen cubra completamente el contenedor sin perder su aspecto */
+    background-position: center; /* Centra la imagen de fondo */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,21 +61,22 @@ h2{
 
 #grid-recipes{
     display: grid;
-    grid-template-rows: 400px 400px;
-    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 .grid-cajas{
     background-color: white;
+    max-width: 100%;
     
 }
 
 .grid-cajas img{
-    display: block;
+    width: 100%;
     margin: 0 auto;
     padding: 10px;
 }
@@ -84,4 +88,16 @@ p{
     font-family: "DM Sans", sans-serif;
     line-height: 1.5;
 }
+
+@media (max-width: 730px){
+ #grid-recipes{
+    grid-template-columns: 1fr 1fr;
+ }
+}
+@media (max-width: 540px){
+    #grid-recipes{
+       grid-template-columns: 1fr;
+       
+    }
     
+   }
