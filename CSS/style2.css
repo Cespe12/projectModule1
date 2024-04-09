@@ -26,9 +26,37 @@ header, footer{
 }
 .caja1,.caja1 a,.caja2{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "DM Serif Display", serif;
     
     
+}
+.caja1 a{
+    font-size: 30px;
+}
+.caja2{
+    display: flex;
+    align-items: center;
+    
+}
+#dark-mode{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border: #333 solid 2px;
+    cursor: pointer;
+    background-image: url(/images/dark-mode.png);
+    background-size: cover;
+    background-color:white;
+}
+#light-mode{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    border: #333 solid 2px;
+    cursor: pointer;
+    background-image: url(/images/light-mode.png);
+    background-size: cover;
+    background-color:white;
 }
 #grid-main{
     max-width: 1200px;
@@ -73,6 +101,10 @@ p{
 h2{
     color: #824431;
     font-family: "DM Serif Display", serif;
+}
+a{
+    text-decoration: none;
+    color: white
 }
 table{
     width: 100%;
