@@ -58,7 +58,7 @@ header, footer{
     background-size: cover;
     background-color:white;
 }
-.formulario-main{
+#formulario-main{
     max-width: 900px;
     min-height: 1000px;
     background-color: white;
